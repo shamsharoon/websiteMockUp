@@ -11,11 +11,11 @@ export default function LogoCloud() {
           </h2>
           {/* TODO: change logo brands */}
           <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-            <div className="flex justify-center items-center"><FontAwesomeIcon icon={faLinkedin} style={{color: "#87c535", }} className="text-5xl" /></div>
-            <div className="flex justify-center items-center"><FontAwesomeIcon icon={faInstagram} style={{color: "#87c535"}} className="text-5xl" /></div>
-            <div className="flex justify-center items-center"><FontAwesomeIcon icon={faAirbnb} style={{color: "#87c535"}} className="text-5xl" /></div>
-            <div className="flex justify-center items-center"><FontAwesomeIcon icon={faAmazon} style={{color: "#87c535"}} className="text-5xl" /></div>
-            <div className="flex justify-center items-center"><FontAwesomeIcon icon={faBehanceSquare} style={{color: "#87c535"}} className="text-5xl" /></div>
+            <div className="flex justify-center items-center col-span-2 max-h-12 w-full object-contain lg:col-span-1"><FontAwesomeIcon icon={faLinkedin} style={{color: "#87c535", }} className="text-5xl" /></div>
+            <div className="flex justify-center items-center col-span-2 max-h-12 w-full object-contain lg:col-span-1"><FontAwesomeIcon icon={faInstagram} style={{color: "#87c535"}} className="text-5xl" /></div>
+            <div className="flex justify-center items-center col-span-2 max-h-12 w-full object-contain lg:col-span-1"><FontAwesomeIcon icon={faAirbnb} style={{color: "#87c535"}} className="text-5xl" /></div>
+            <div className="flex justify-center items-center col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"><FontAwesomeIcon icon={faAmazon} style={{color: "#87c535"}} className="text-5xl" /></div>
+            <div className="flex justify-center items-center col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"><FontAwesomeIcon icon={faBehanceSquare} style={{color: "#87c535"}} className="text-5xl" /></div>
           </div>
         </div>
       </div>
