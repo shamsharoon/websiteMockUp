@@ -38,7 +38,7 @@ export default function Hero({id}) {
           </div>
           <div className="text-center">
             <div className="flex gap-5 flex-col justify-center items-center md:flex-row">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl flex-wrap">
               Want to Learn More About Recycling?
             </h1>
             <img src={Logo} alt="logo" className="w-28 h-auto"/>
