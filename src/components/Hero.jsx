@@ -1,16 +1,8 @@
-import { Dialog, DialogPanel } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import Logo from "../assets/trashfavi.png";
 import Spline from '@splinetool/react-spline';
-
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-];
+import { useState} from 'react';
 
 export default function Hero({ id }) {
+
   return (
     <div className="relative isolate md:-translate-y-40 px-6 pt-14 lg:px-8" id={id}>
       <div
@@ -39,7 +31,7 @@ export default function Hero({ id }) {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="#"
+                href="https://trash-it.azurewebsites.net/"
                 className="rounded-md bg-primary-brand px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-primary-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Try Now
@@ -47,7 +39,7 @@ export default function Hero({ id }) {
             </div>
           </div>
           <div className="w-full h-[600px] md:w-full md:h-[700px] mt-32 md:mt-0">
-            <Spline scene="https://prod.spline.design/eWuTfAK0BonC9F1B/scene.splinecode" />
+              <Spline scene="https://prod.spline.design/eWuTfAK0BonC9F1B/scene.splinecode"/>
           </div>
         </div>
       </div>

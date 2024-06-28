@@ -19,7 +19,7 @@ const people = [
   {
     id: 1,
     name: 'Shams Haroon',
-    role: 'Founder / CEO',
+    role: 'CEO & Lead Software Developer / Founder',
     imageUrl:
       'https://media.licdn.com/dms/image/D5603AQHsaraMo4ZItw/profile-displayphoto-shrink_200_200/0/1709501806086?e=1724889600&v=beta&t=-R3mBM7N31KzOEOlWaXFn2xY10YHDhf07BhK8DrH7KI',
     description: 'Computer Science Student at Ontario Tech University',
@@ -29,7 +29,7 @@ const people = [
   {
     id: 2,
     name: 'Ethan Tzortzis',
-    role: '{fill in} / {fill in}',
+    role: 'Marketing Specialist / Co-Founder',
     imageUrl:
       'https://media.licdn.com/dms/image/D5603AQENT9xZvJpLIw/profile-displayphoto-shrink_100_100/0/1701225095411?e=1724889600&v=beta&t=dlG4SOnulRKM4hJV9XxjaYZcMndW4KfFORPhT6uzXCM',
     description: 'Electrical Engineer Student at Ontario Tech University',
@@ -39,7 +39,7 @@ const people = [
   {
     id: 3,
     name: 'Tommy M',
-    role: '{fill in} / {fill in}',
+    role: 'Business Analytics/ Co-Founder',
     imageUrl:
       'https://media.licdn.com/dms/image/D5603AQHeiupj-DbqjA/profile-displayphoto-shrink_200_200/0/1688085903604?e=1724889600&v=beta&t=dB8lvXwpVk5Rmnf_KOX2ryWSaYBF9zGL_OINqShtQeQ',
     description: 'Finance Student at Ontario Tech University',
@@ -49,7 +49,7 @@ const people = [
   {
     id: 4,
     name: 'Vincent Wong',
-    role: '{fill in} / {fill in}',
+    role: 'Creative Director / Co-Founder',
     imageUrl:
       'https://media.licdn.com/dms/image/D5603AQHIv5wB8UzJMg/profile-displayphoto-shrink_200_200/0/1709569703737?e=1724889600&v=beta&t=Rhe5tkZRJ_GOj9bDVtLV_LllFWTqC3kfbV5KGEkc5jA',
     description: 'Computer Science Student at Ontario Tech University',
