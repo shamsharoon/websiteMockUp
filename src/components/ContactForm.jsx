@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
 
 function ContactForm({ id, data }) {
     const form = useRef();
@@ -36,6 +37,7 @@ function ContactForm({ id, data }) {
             .then(
                 () => {
                     console.log('SUCCESS!');
+                    toast.success('Message sent successfully!');
                     // Reset form fields
                     setEmail('');
                     setSubject('');
@@ -43,6 +45,7 @@ function ContactForm({ id, data }) {
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
+                    toast.error('Failed to send message. Please try again later.');
                 }
             );
     };
