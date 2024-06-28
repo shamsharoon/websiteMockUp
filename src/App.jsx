@@ -5,13 +5,17 @@ import Features from "./components/Features"
 import Stats from "./components/Stats"
 import Team from "./components/Team"
 import ContactForm from "./components/ContactForm"
+import * as React from 'react'
+import { ChakraProvider } from '@chakra-ui/react'
+import * as ReactDOM from 'react-dom/client'
+import Footer from "./components/Footer"
 import.meta.env
 
 
 function App() {
     const data = import.meta.env
   return (
-    <div className=" h-screen">
+    <ChakraProvider className=" h-screen">
       <Navbar />
       <Hero id="home"/>
       <LogoCloud />
@@ -19,7 +23,8 @@ function App() {
       <Team id="team" />
       <Stats />
       <ContactForm data={data} id="contact"/>
-    </div>
+      <Footer />
+    </ChakraProvider>
   )
 }
 
