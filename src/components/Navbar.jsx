@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Logo from "../assets/techlogo.png";
 import { Link } from "react-scroll";
 
 const navigation = [
-  { name: 'Home', href: 'home', current: true },
+  { name: 'Home', href: 'home', current: false },
   { name: 'Features', href: 'features', current: false },
   { name: 'Team', href: 'team', current: false },
   { name: 'Contact', href: 'contact', current: false },
@@ -16,27 +16,8 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
-  const [show, setShow] = useState(true);
-  const lastScrollY = useRef(window.scrollY);
-
-  const controlNavbar = () => {
-    if (window.scrollY > lastScrollY.current) {
-      setShow(false);
-    } else {
-      setShow(true);
-    }
-    lastScrollY.current = window.scrollY;
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', controlNavbar);
-    return () => {
-      window.removeEventListener('scroll', controlNavbar);
-    };
-  }, []);
-
   return (
-    <Disclosure as="nav" className={`bg-white w-screen z-50 fixed inset-x-0 top-0 transition-transform duration-300 ${show ? 'translate-y-0' : '-translate-y-full'}`}>
+    <Disclosure as="nav" className="bg-white/80 backdrop-blur-xl w-screen z-50 fixed inset-x-0 top-0 transition-transform duration-300">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -55,9 +36,9 @@ export default function Navbar() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="h-8 w-auto cursor-pointer"
+                    className="h-8 w-auto cursor-pointer bg-white/10 rounded-md hover:bg-white hover:bg-opacity-100 transition-all duration-300"
                     src={Logo}
-                    alt="Trash Tech Logo"
+                    alt="Tech Logo"
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
@@ -69,7 +50,7 @@ export default function Navbar() {
                         smooth={true}
                         duration={1000}
                         className={classNames(
-                          item.current ='text-primary-brand hover:bg-primary-brand hover:text-white',
+                          item.current ? 'text-primary-brand' : 'text-gray-500 hover:text-primary-brand',
                           'rounded-md px-3 py-2 text-sm font-medium cursor-pointer',
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -93,7 +74,7 @@ export default function Navbar() {
                   as="a"
                   href={`#${item.href}`}
                   className={classNames(
-                    item.current ? 'bg-white text-primary-brand' : 'text-primary-brand hover:bg-primary-brand hover:text-white',
+                    item.current ? 'bg-primary-brand text-white' : 'text-gray-500 hover:bg-primary-brand hover:text-white',
                     'block rounded-md px-3 py-2 text-base font-medium',
                   )}
                   aria-current={item.current ? 'page' : undefined}

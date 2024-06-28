@@ -35,8 +35,7 @@ export default function Hero({ id }) {
               Want to Learn More About Recycling?
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat fugiat aliqua.
+            Trash Tech leverages cutting-edge AI to automate waste sorting and optimize recycling processes, ensuring minimal environmental impact and maximum efficiency.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
