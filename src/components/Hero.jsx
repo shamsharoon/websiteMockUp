@@ -29,7 +29,7 @@ export default function Hero({ id }) {
             <p className="mt-6 text-lg leading-8 text-gray-600">
             Trash Tech leverages cutting-edge AI to automate waste sorting and optimize recycling processes, ensuring minimal environmental impact and maximum efficiency.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="mt-10 flex w-full items-center justify-center gap-x-6">
               <a
                 href="https://trash-it.azurewebsites.net/"
                 className="rounded-md bg-primary-brand px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-primary-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"

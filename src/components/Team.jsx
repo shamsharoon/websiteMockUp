@@ -15,13 +15,15 @@ import {
   Button,
 } from '@chakra-ui/react';
 
+import Logo from "../assets/techlogo.png";
+
 const people = [
   {
     id: 1,
     name: 'Shams Haroon',
     role: 'CEO & Lead Software Developer / Founder',
     imageUrl:
-      'https://media.licdn.com/dms/image/D5603AQHsaraMo4ZItw/profile-displayphoto-shrink_200_200/0/1709501806086?e=1724889600&v=beta&t=-R3mBM7N31KzOEOlWaXFn2xY10YHDhf07BhK8DrH7KI',
+      'https://media.licdn.com/dms/image/v2/D5603AQHsaraMo4ZItw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1709501806086?e=1733356800&v=beta&t=NaqADCfIpsOMysWKjWLbtk1ZgwlwyGxLXWEw511M_K4',
     description: 'Computer Science Student at Ontario Tech University',
     moreInfo: "Shams is a Full Stack Developer that uses tools/languages like React, Three.js, SQL, and C++, Python and more. He leads software projects at Trash Tech, focusing on AI solutions for sustainable waste management.",
     linkedIn: 'https://www.linkedin.com/in/shams-haroon/',
@@ -31,7 +33,7 @@ const people = [
     name: 'Ethan Tzortzis',
     role: 'Marketing Specialist / Co-Founder',
     imageUrl:
-      'https://media.licdn.com/dms/image/D5603AQENT9xZvJpLIw/profile-displayphoto-shrink_100_100/0/1701225095411?e=1724889600&v=beta&t=dlG4SOnulRKM4hJV9XxjaYZcMndW4KfFORPhT6uzXCM',
+      'https://media.licdn.com/dms/image/v2/D5603AQENT9xZvJpLIw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1701225095411?e=1733356800&v=beta&t=YuaE9210Wil3JScX_ixstACnf8-jkZIXgt8eW057Ce8',
     description: 'Electrical Engineer Student at Ontario Tech University',
     moreInfo: "Ethan combines his knowledge of electrical engineering with a keen interest in technological advancements. His contributions are vital to the development of our cutting-edge solutions.",
     linkedIn: 'https://www.linkedin.com/in/ethan-tzortzis/',
@@ -41,7 +43,7 @@ const people = [
     name: 'Tommy M',
     role: 'Business Analytics/ Co-Founder',
     imageUrl:
-      'https://media.licdn.com/dms/image/D5603AQHeiupj-DbqjA/profile-displayphoto-shrink_200_200/0/1688085903604?e=1724889600&v=beta&t=dB8lvXwpVk5Rmnf_KOX2ryWSaYBF9zGL_OINqShtQeQ',
+      'https://media.licdn.com/dms/image/v2/D5603AQHeiupj-DbqjA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1688085903604?e=1733356800&v=beta&t=ul_2w1GwHSQyBFHRbLP40gKmDpj6v2i9UTJxzhw9qP8',
     description: 'Finance Student at Ontario Tech University',
     moreInfo: "Tommy's financial acumen ensures that our projects are not only innovative but also economically viable. He plays a crucial role in the financial planning and sustainability of our ventures.",
     linkedIn: 'https://www.linkedin.com/in/tommydmichailidis/',
@@ -51,7 +53,7 @@ const people = [
     name: 'Vincent Wong',
     role: 'Creative Director / Co-Founder',
     imageUrl:
-      'https://media.licdn.com/dms/image/D5603AQHIv5wB8UzJMg/profile-displayphoto-shrink_200_200/0/1709569703737?e=1724889600&v=beta&t=Rhe5tkZRJ_GOj9bDVtLV_LllFWTqC3kfbV5KGEkc5jA',
+      'https://media.licdn.com/dms/image/v2/D5603AQHIv5wB8UzJMg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1709569703737?e=1733356800&v=beta&t=zlQ_nAdWo8AvNw3MRXzdGUbJx2VZOLfnPhvUKWWiv3k',
     description: 'Computer Science Student at Ontario Tech University',
     moreInfo: "Vincent's expertise in computer science helps us tackle complex challenges with innovative solutions. His technical skills are an invaluable asset to our team.",
     linkedIn: 'https://www.linkedin.com/in/vincentklw/',
